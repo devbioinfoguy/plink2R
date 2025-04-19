@@ -1,4 +1,7 @@
-
+#include <sys/time.h> 
+#include <stdlib.h> 
+#define srand48(x) srand((int)(x)) 
+#define drand48() ((double)rand()/(RAND_MAX + 1.0))
 #include "data.hpp"
 
 #include <fcntl.h>
